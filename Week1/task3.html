@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Control flow</h1>
+    <p id="demo"></p>
+    
+    <script>
+        let age ;
+        prompt("enter the age ");
+        if(age<18)
+        {
+          document.getElementById("demo").innerHTML="you are minor";
+        }
+        else if(age>=18 && age<=65)
+        {
+          document.getElementById("demo").innerHTML="you are adult";
+        }
+        else(age>65)
+        { 
+          document.getElementById("demo").innerHTML="you are senior citizen";
+        }
+    </script>
+
+</body>
+</html>

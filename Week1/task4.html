@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun(arr)
+        {
+            let max=0,min=999999;
+          for(let i=0;i<arr.length;i++)
+          {
+            if(max<arr[i])
+            {
+                max=arr[i];
+            }
+            if(min>arr[i])
+            {
+                min=arr[i];
+            }
+          }
+    
+           document.write("max value is "+max+ " and min value is "+min);
+        }
+        let arr=[30,35,10,900,700];
+        fun(arr);
+        
+    </script>
+</body>
+</html>

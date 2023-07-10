@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array and Object</h1>
+    <h4 id="head"></h4>
+    <script>
+        let c=document.getElementById("head");
+    const arr=[
+     {
+        name:"maths",
+        price:5000,
+     },
+     {
+        name:"physics",
+        price:2000,
+     },
+     {
+        name:"javascript",
+        price:1000,
+     }
+   
+    ]
+    for(let i=0;i<arr.length;i++)
+    {
+       
+        let div=document.createElement("div");
+        div.textContent=arr[i].name;
+        c.appendChild(div)
+       
+    }
+</script>
+</body>
+</html>

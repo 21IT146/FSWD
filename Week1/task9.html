@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Asynchronous</h1>
+    <p id="demo"></p>
+   
+     <script>
+        let a=document.getElementById("demo")
+        setTimeout(
+            function fun(){
+                a.innerHTML= "Happy Birthday" ;
+            },8000
+        )
+     </script>
+</body>
+</html>

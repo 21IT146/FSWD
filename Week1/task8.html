@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Error Handling</title>
+</head>
+<body>
+    <h1>Enter number</h1>
+    <form action="task8.html">
+    <input  type="text" id="dem">
+    <button type="button" id="Btn" onclick="fun()"> click</button>
+     </form>
+     <p id="demo"></p>
+    <script>
+        function fun()
+        {
+            let a=document.getElementById("dem").value;
+            let b=document.getElementById("demo");
+            try
+            {
+                if(a<0){
+                throw "Enter positive Number";
+                }
+            }
+            catch(abc)
+            {
+                b.innerHTML="error "+abc;
+            } }
+     </script>  
+</body>
+</html>
